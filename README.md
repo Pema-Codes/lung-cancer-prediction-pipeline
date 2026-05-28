@@ -8,8 +8,6 @@ This project implements a robust machine learning pipeline to predict lung cance
 
 lung_cancer_analysis.ipynb: Full EDA, training, and validation logic.
 
-predict.py: Production-ready script for real-time inference.
-
 lung_cancer_pipeline.pkl: The trained Logistic Regression model pipeline.
 
 requirements.txt: Environment dependencies.
