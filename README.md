@@ -33,7 +33,7 @@ requirements.txt: Environment dependencies.
 ## Model Performance
 
 - **Model Selection**: Logistic Regression was chosen as the final model over XGBoost and Random Forest due to its superior stability and interpretability.
-- 
+  
 - **Optimized Performance**: The Logistic Regression pipeline achieved high performance on a test set with a custom threshold of `0.5433`:
   
     - **Accuracy**: 95%
