@@ -119,9 +119,9 @@ Fatigue
 
 ##Future Work
 
-    Integrate additional patient data sources for richer feature engineering.
-    Explore advanced interpretability techniques (e.g., SHAP, LIME).
-    Develop a user-friendly interface for clinicians to interact with the model.
+- Integrate additional patient data sources for richer feature engineering.
+- Explore advanced interpretability techniques (e.g., SHAP, LIME).
+- Develop a user-friendly interface for clinicians to interact with the model.
 
 
 ## How to run
@@ -137,20 +137,20 @@ Fatigue
 
 ## Technical Implementation Roadmap
 
-    [x] Data Engineering: Schema normalization, categorical encoding, and null value verification.
+[x] Data Engineering: Schema normalization, categorical encoding, and null value verification.
 
-    [x] Exploratory Data Analysis (EDA): Correlation heatmaps and symptom distribution profiling.
+[x] Exploratory Data Analysis (EDA): Correlation heatmaps and symptom distribution profiling.
 
-    [x] Preprocessing: Implemented SMOTE for class balance and StandardScaler for feature normalization.
+[x] Preprocessing: Implemented SMOTE for class balance and StandardScaler for feature normalization.
 
-    [x] Dimensionality Reduction: Utilized UMAP for manifold learning and cluster validation.
+[x] Dimensionality Reduction: Utilized UMAP for manifold learning and cluster validation.
 
-    [x] Architecture: Developed a unified sklearn.pipeline for robust data flow.
+[x] Architecture: Developed a unified sklearn.pipeline for robust data flow.
 
-    [x] Optimization: Performed GridSearchCV for hyperparameter tuning and Threshold Optimization to maximize clinical recall.
+[x] Optimization: Performed GridSearchCV for hyperparameter tuning and Threshold Optimization to maximize clinical recall.
 
-    [x] Validation: 10-Fold Cross-Validation and ROC-AUC performance benchmarking.
+[x] Validation: 10-Fold Cross-Validation and ROC-AUC performance benchmarking.
 
-    [x] Clinical Analysis: In-depth error analysis of "Borderline" cases and model confidence distribution.
+[x] Clinical Analysis: In-depth error analysis of "Borderline" cases and model confidence distribution.
 
-    [x] Deployment Ready: Model serialization via joblib and production scripting for real-time inference.
+[x] Deployment Ready: Model serialization via joblib and production scripting for real-time inference.
