@@ -65,6 +65,7 @@ As shown in the Confusion Matrix (with optimized threshold), the model highly pr
 -   **Precision:** 2 healthy patients were misclassified as having cancer (False Positives).
 
 The model demonstrates an elite ability to minimize unnecessary clinical anxiety while maintaining a high catch rate for cancer cases.
+![Confusion Matrix](Plots/confusion_matrix_optimized_threshold.png)
 
 ## Key Clinical Insights
 
@@ -82,13 +83,15 @@ Observation: Distinct spatial clustering was observed between the 'Healthy' (Blu
 
 Validation: The distinct separation confirms that the selected features (symptoms) are high-qualtiy biological markers for this classification task. 
 
+![UMAP Projection](Plots/umap.png)
+
 3. **Strategic Threshold Optimization**
 
 Rather than using the default 0.5 probability, I implemented a Custom Decision Threshold (0.5433). 
 
 Goal: To balance Precision and Recall. 
 
-Clinical Impact: This optimization significantly improved teh identification of the 'Healthy' class while maintaining high sensitivity for detecting 'Lung Cancer' cases, reducing unnecessary clincal alarm. 
+Clinical Impact: This optimization significantly improved the identification of the 'Healthy' class while maintaining high sensitivity for detecting 'Lung Cancer' cases, reducing unnecessary clincal alarm. 
 
 4. **Clinical Error Analysis: the "Borderline" Patient**
 
@@ -96,22 +99,24 @@ My pipeline identified Patient 227 as a critical False Negative (Actual: Cancer 
 
 Finding: The model reported a very low confidence score (10.6%). 
 
-This highlights the necessity of Confidence Score Monitoring. In real-world pipeline, any patinet falling within a "Low Confidence" interval (e.g., 40%-60%) would be automatically flagged for Manual Clinical Review by a Medical Lead.
+This highlights the necessity of Confidence Score Monitoring. In real-world pipeline, any patient falling within a "Low Confidence" interval (e.g., 40%-60%) would be automatically flagged for Manual Clinical Review by a Medical Lead.
 
 5. **Top Clinical Predictors** 
 
 The model’s feature importance ranking identified the top 5 indicators for this dataset:
 
-    Chronic Disease (Comorbidity impact)
+Chronic Disease (Comorbidity impact)
 
-    Allergy
+Allergy
 
-    Peer Pressure (Social determinant of health)
+Peer Pressure (Social determinant of health)
 
-    Alcohol Consumption
+Alcohol Consumption
 
-    Fatigue
+Fatigue
     
+![Feature Importance Plot](Plots/feature_importance.png)
+
 ##Future Work
 
     Integrate additional patient data sources for richer feature engineering.
